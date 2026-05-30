@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
-using HarmonyLib;
+
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
@@ -24,8 +23,6 @@ namespace osu.Game.Rulesets.Aaaaa
 
         public AaaaaRuleset()
         {
-            var harmony = new Harmony(short_name);
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         public override string Description => "My learning project of osu lazer ruleset";
